@@ -18,37 +18,17 @@ export default {
   <div class="fundo">
     <div class="textin">
       <div class="infos">
-        <h2>Conheça o <strong>CineWeb</strong></h2>
+        <h2><strong>THE BATMAN</strong></h2>
         <p>
-          O melhor site de filmes , séries e animações que existe , descubra as
-          mais variadas informações sobre seu filme, ator/atriz, diretor
-          favoritos, entre muitas outras coisas!
+          Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. 
+          Com poucos aliados confiáveis,
+           o vigilante solitário se estabelece como a personificação da vingança para a população.
         </p>
         <button>VER MAIS</button>
       </div>
     </div>
   </div>
-  <div class="section2">
-    <div class="div-display">
-      <div class="duvida">
-        <imgComp />
-      </div>
-      <div class="div-cards">
-        <CardComp
-          dicas="Acompanhe canais de críticos de cinema e produções de TV"
-          picture_src="src/assets/img/undraw_home_cinema_l7yl.png"
-        />
-        <CardComp
-          dicas="Acesse sites e apps que indicam filmes e séries fora do óbvio"
-          picture_src="src/assets/img/undraw_horror_movie_3988.png"
-        />
-        <CardComp
-          dicas="Acompanhe perfis do Instagram com frases de filmes e séries"
-          picture_src="src/assets/img/undraw_netflix_q00o.png"
-        />
-      </div>
-    </div>
-  </div>
+
   <FilmesComp />
   <FooterComp />
 </template>

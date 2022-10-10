@@ -4,6 +4,9 @@ export default {};
 <template>
   <header>
     <nav>
+      <div class="logo">
+        <h1>CineWeb</h1>
+      </div>
       <div class="links">
         <a href="#">Animações</a>
         <a href="#">Filmes</a>

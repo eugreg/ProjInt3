@@ -3,10 +3,28 @@ import CardFilmesComp from "./CardFilmesComp.vue";
 export default { components: { CardFilmesComp } };
 </script>
 <template>
+    <div class="filtros">
+    <label for="Filtros"></label>
+    <select name="Filmes" id="Filtros">
+      <option value="Filmes">Filmes</option>
+      <option value="Animações">Animações</option>
+      <option value="Séries">Séries</option>
+      <option value="Animes">Animes</option>
+    </select>
+  
+    <label for="Filtros"></label>
+    <select name="Terror" id="Filtros">
+      <option value="Ação">Ação</option>
+      <option value="Aventura">Aventura</option>
+      <option value="Comédia">Comédia</option>
+      <option value="Romance">Romance</option>
+      <option value="Terror">Terror</option>
+    </select>
+  </div>
+  
   <div class="section3">
     <div class="filmes-homeview">
       <div>
-        <h3 class="PoEmh3">Populares</h3>
         <div class="filmes-linhas">
           <CardFilmesComp />
           <CardFilmesComp />
@@ -14,21 +32,6 @@ export default { components: { CardFilmesComp } };
           <CardFilmesComp />
         </div>
       </div>
-      <div>
-        <h3 class="PoEmh3">Em cartaz</h3>
-        <div class="filmes-linhas">
-          <CardFilmesComp />
-          <CardFilmesComp />
-          <CardFilmesComp />
-          <CardFilmesComp />
-        </div>
-      </div>
-    </div>
-    <div class="tg">
-      <h2 class="imagem-h2">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-        expedita aliquam fugiat
-      </h2>
     </div>
   </div>
 </template>
