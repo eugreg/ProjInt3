@@ -1,6 +1,6 @@
 <script>
-import CardFilmesComp from "./CardFilmesComp.vue";
-export default { components: { CardFilmesComp } };
+import ImgsComp from "./ImgsComp.vue";
+export default { components: { ImgsComp } };
 </script>
 <template>
     <div class="filtros">
@@ -19,19 +19,16 @@ export default { components: { CardFilmesComp } };
       <option value="Comédia">Comédia</option>
       <option value="Romance">Romance</option>
       <option value="Terror">Terror</option>
+      <option value="Supense">Suspense</option>
+      <option value="Ficção Científica">Ficção Científica</option>
+      <option value="Guerra">Guerra</option>
+      <option value="Musical">Musical</option>
+      <option value="Fantasia">Fantasia</option>
     </select>
   </div>
   
-  <div class="section3">
-    <div class="filmes-homeview">
-      <div>
-        <div class="filmes-linhas">
-          <CardFilmesComp />
-          <CardFilmesComp />
-          <CardFilmesComp />
-          <CardFilmesComp />
-        </div>
-      </div>
-    </div>
+  <div>
+    <ImgsComp></ImgsComp>
   </div>
+  
 </template>

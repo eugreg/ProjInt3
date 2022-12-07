@@ -5,12 +5,12 @@ export default {};
   <header>
     <nav>
       <div class="logo">
-        <h1>CineWeb</h1>
+        <RouterLink to="/"><h1>CineWeb</h1></RouterLink>
       </div>
       <div class="links">
-        <a href="#">Animações</a>
-        <a href="#">Filmes</a>
-        <a href="#">Séries</a>
+        <RouterLink to="animacoes"><a href="">Animações</a></RouterLink>
+        <RouterLink to="filmes"><a href="#">Filmes</a></RouterLink>
+        <RouterLink to="series"><a href="#">Séries</a></RouterLink>
       </div>
       <input class="buscar" type="text" placeholder="Buscar..." />
     </nav>
