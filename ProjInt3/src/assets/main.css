@@ -213,9 +213,6 @@ h3{
   margin-top: 10.7vh;  
   float: right;
 }
-.Elenco{
-  margin-top: 7vh ;
-}
 .Flex {
   display: flex;
 }
@@ -225,32 +222,7 @@ h3{
   height: 40vh;
   width: 30vh;
 }
-.NomeAtor{
-  margin-top: 12vh;
-}
-.informações-ator{
-  margin-left: 3vh;
-  margin-top: 10vh;
-}
-.info-ator{
-  width: fit-content;
-  height: fit-content;
+.info-movi{
   display: flex;
-  color: white; 
-}
-.daniel{
-  height: 60vh;
-}
-.Ator{
-  margin-top: 2vh;
-}
-.Ator2{
-  margin-top: 2vh;
-}
-.Ator3{
-  margin-top: 2vh;
-}
-.FilmesDaniel{
-  margin-top: 15vh;
-  text-align: center;
+  margin-bottom: 8vh;
 }
