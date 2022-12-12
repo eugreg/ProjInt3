@@ -3,7 +3,8 @@ import HomeView from "@/views/HomeView.vue";
 import PaginaFilme from "@/views/PaginaFilme.vue"
 import FilmesView from "@/views/FilmesView.vue";
 import SeriesView from "@/views/SeriesView.vue";
-import AtorView from "@/views/AtorView.vue";
+import CategoriasView from "@/views/CategoriasView.vue";
+import LancamentosView from "@/views/LancamentosView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -30,9 +31,15 @@ const router = createRouter({
       component: SeriesView,
     },
     {
-      path: "/AtorView",
-      name: "AtorView",
-      component: AtorView,
+      path: "/genero/:id",
+      name: "generos",
+      component: CategoriasView,
+      props: true,
+    },
+    {
+      path: "/lancamentos",
+      name: "lancamentos",
+      component: LancamentosView,
     },
   ],
 });

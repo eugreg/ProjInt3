@@ -1,31 +1,52 @@
 <script>
+import PictureCard from "../components/PictureCard.vue";
 import FilmesComp from "../components/FilmesComp.vue";
+import FilmeApi from "../api/filmes.js";
+const filmeapi = new FilmeApi();
 export default {
-  name: "app",
-  components: {
-    FilmesComp,
- 
-},
-};
+  components: { PictureCard,    FilmesComp, },
+  data() {
+    return {
+      filmes: [],
+    
+    };  
+  },  
+  async created() {
+    this.filmes = await filmeapi.BuscaBatman();
+  },  
+  methods: {
+    getPosterUrl(backdrop_path) {
+      return `https://image.tmdb.org/t/p/w500${backdrop_path}`;
+    },  
+  },  
+}  
+
+
 </script>
 <template>
-   
-   
-  <div class="fundo">
-    <div class="textin">
-      <div class="infos">
+  
+    <div class="">
+
+
+      <img
+          class="fundo"
+          :src="getPosterUrl(filmes.backdrop_path)"
+          alt="linda imagem do avatar"
+        />
+      </div>
+      <div class="textin">
+        <div class="infos">
+  
         <main>
-        <h2><strong>THE BATMAN</strong></h2>
+        <h2><strong>{{filmes.original_title}}</strong></h2>
         <p>
-          Após dois anos espreitando as ruas como Batman, Bruce Wayne se encontra nas profundezas mais sombrias de Gotham City. 
-          Com poucos aliados confiáveis,
-           o vigilante solitário se estabelece como a personificação da vingança para a população.
+         {{filmes.overview}}
         </p>
-        <button>VER MAIS</button>
+
       </main>
       </div>
     </div>
-  </div>
+ 
 
   <FilmesComp />
 </template>

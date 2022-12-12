@@ -110,7 +110,6 @@ input {
   align-items: center;
 }
 .fundo {
-  background: url(src/assets/img/batman.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 90vh;
