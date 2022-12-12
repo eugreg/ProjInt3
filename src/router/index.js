@@ -5,6 +5,8 @@ import FilmesView from "@/views/FilmesView.vue";
 import SeriesView from "@/views/SeriesView.vue";
 import CategoriasView from "@/views/CategoriasView.vue";
 import LancamentosView from "@/views/LancamentosView.vue";
+import PaginaPesquisa from "@/views/PaginaPesquisa.vue";
+import PaginaSerie from "@/views/PaginaSerie.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,6 +23,12 @@ const router = createRouter({
       props: true,
     },
     {
+      path: "/series/:id",
+      nome: "series",
+      component: PaginaSerie,
+      props: true,
+    },
+    {
       path: "/filmes",
       name: "filmes",
       component: FilmesView,
@@ -34,6 +42,12 @@ const router = createRouter({
       path: "/genero/:id",
       name: "generos",
       component: CategoriasView,
+      props: true,
+    },
+    {
+      path: "/pesquisa",
+      nome: "pesquisa",
+      component: PaginaPesquisa,
       props: true,
     },
     {

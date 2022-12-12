@@ -1,13 +1,13 @@
 <script>
-import FilmeApi from "../api/filmes.js";
-const filmeapi = new FilmeApi();
+import SerieApi from "../api/series.js";
+const seriesapi = new SerieApi();
 export default {
   data() {
     return {
       videos: false,
     };
   },
-  props: ["filme"],
+  props: ["serie"],
   
   methods: {
     
@@ -22,21 +22,21 @@ export default {
 <template>
   <div class="descMovi"></div>
     <div>
-      <div class="titulo2">{{ filme.title }}</div>
+      <div class="titulo2">{{ serie.name}}</div>
       <img
         class="poster-filme-pag"
-        :src="getPosterUrl(filme.poster_path)"
+        :src="getPosterUrl(serie.poster_path)"
         
       />
     </div>
       <div class="descMovi">
-        {{ filme.overview }}
+        {{ serie.overview}}
       </div>
       <div class="descMovi2">
-        <h3>Lançamento: {{ filme.release_date }}</h3>
+        <h3>Lançamento: {{ serie.first_air_date}}</h3>
       </div>
       <div class="descMovi3">
-        <h3>Avaliação dos usuários: {{ Math.round(filme.vote_average) }}</h3>
+        <h3>Avaliação dos usuários: {{ Math.round(serie.vote_average) }}</h3>
       </div>
      
       

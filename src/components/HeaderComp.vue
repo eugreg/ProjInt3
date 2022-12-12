@@ -32,10 +32,10 @@ export default {
       <div class="links">
         <RouterLink to="/lancamentos"><a href="">Lançamentos</a></RouterLink>
         <RouterLink to="filmes"><a href="#">Filmes</a></RouterLink>
-        <RouterLink to="series"><a href="#">Séries</a></RouterLink>
+        <RouterLink to="/series"><a href="#">Séries</a></RouterLink>
       </div>
       
-        <Button class="pesquisa"> pesquisar</Button>
+        <RouterLink to="/pesquisa" > <Button class="pesquisa"> pesquisar</Button> </RouterLink>
       
     </nav>
   </header>

@@ -33,8 +33,11 @@ export default {
 
 <template>
   <div class="main">
-    <div>
-      <p>{{ generoAtual.name }}</p>
+    <div class="titulo">
+      <h1>
+
+        {{ generoAtual.name }}
+      </h1>
     </div>
     <div class="conteudo">
       <PictureCard
