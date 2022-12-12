@@ -34,8 +34,7 @@ export default {
         <RouterLink to="filmes"><a href="#">Filmes</a></RouterLink>
         <RouterLink to="/series"><a href="#">Séries</a></RouterLink>
       </div>
-      
-        <RouterLink to="/pesquisa" > <Button class="pesquisa"> pesquisar</Button> </RouterLink>
+ 
       
     </nav>
   </header>

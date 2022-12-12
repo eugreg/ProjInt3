@@ -34,6 +34,7 @@ export default {
       </div>
       <div class="descMovi2">
         <h3>Lançamento: {{ filme.release_date }}</h3>
+
       </div>
       <div class="descMovi3">
         <h3>Avaliação dos usuários: {{ Math.round(filme.vote_average) }}</h3>

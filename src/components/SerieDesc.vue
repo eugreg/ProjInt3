@@ -34,7 +34,11 @@ export default {
       </div>
       <div class="descMovi2">
         <h3>Lançamento: {{ serie.first_air_date}}</h3>
-      </div>
+    </div>
+    <div class="descMovi">
+
+        <h3>Temporadas: {{serie.number_of_seasons}}</h3>
+    </div>
       <div class="descMovi3">
         <h3>Avaliação dos usuários: {{ Math.round(serie.vote_average) }}</h3>
       </div>
